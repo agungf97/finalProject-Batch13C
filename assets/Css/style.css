@@ -1,0 +1,198 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: whitesmoke;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.pages a{
+    padding-left: 60px;
+}
+
+.pages img{
+    width: 80px;
+}
+
+nav {   
+    justify-content: flex-end;
+    padding-right: 60px;
+
+    color: black;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style-type: none;
+    padding: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: large;
+    color: black;
+}
+
+nav li a:hover{
+    font-weight: bolder;
+}
+
+.home{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding: 120px;
+}
+
+.home .info{
+    padding: 32px;
+}
+
+.home img{
+    max-width: 40%;
+    height: auto;
+    border-radius: 50px;
+}
+
+.about{
+    margin: 120px 60px 120px 60px;
+    background-color: whitesmoke;
+}
+
+.about .aboutMe{
+    padding: 60px 120px 60px 120px;
+}
+
+.about h1{
+    text-align: center;
+}
+
+.about p{
+    text-align: justify;
+}
+
+.experiences{
+    margin: 60px;
+    padding: 60px;
+    align-items: center;
+}
+
+.experiences h1{
+    text-align: center;
+}
+
+.experiences .work{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 400px 400px;
+    gap: 10px;
+    padding: 10px;
+}
+
+.education{
+    margin: 60px;
+    padding: 60px;
+    align-items: center;
+}
+
+.education h1{
+    text-align: center;
+}
+
+.detailEducation{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 120px;
+}
+
+.detailEducation img{
+    width: 240px;
+}
+
+.skills{
+    margin: 60px;
+    padding: 60px;
+    align-items: center;
+}
+
+.skills h1{
+    text-align: center;
+}
+
+.skills ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 60px;
+    justify-content: center;
+}
+
+.skills ul li{
+    list-style-type: none;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 20px 20px;
+    margin: 20px;
+}
+
+.interests{
+    margin: 60px;
+    padding: 60px;
+    align-items: center;
+}
+
+.interests h1{
+    text-align: center;
+}
+
+.detailInterests{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 60px;
+}
+
+.detailInterests img{
+    width: 320px;
+    border-radius: 10px;
+}
+
+.interests-3 img{
+    width: 240px;
+}
+
+.interests-5 img{
+    width: 240px;
+}
+
+.awards{
+    margin: 60px;
+    padding: 60px;
+    align-items: center;
+}
+
+.awards h1{
+    text-align: center;
+}
+
+.awards .detailAwards{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 400px 400px;
+    gap: 60px;
+    text-align: center;
+}
+
+.detailAwards p{
+    text-align: justify;
+}
