@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 header{
     display: flex;
     justify-content: space-between;
@@ -195,4 +199,73 @@ nav li a:hover{
 
 .detailAwards p{
     text-align: justify;
+}
+
+.footer{
+    background-color: #24262b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container{
+    margin:auto;
+}
+
+.row{
+	display: flex;
+    justify-content: space-between;
+}
+
+.footer-col{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 60px 0px 60px;
+    align-items: baseline;
+}
+
+.footer-col img{
+    width: 60px;
+}
+
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	font-weight: 500;
+	position: relative;
+    margin-right: 32px;
+}
+
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+.footer-col .social-media a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-media a:hover{
+	color: #24262b;
+	background-color: #ffffff;
 }
