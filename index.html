@@ -6,48 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mohamad Agung Faisal</title>
-    <link rel="stylesheet" href="/assets/Css/style.css">
+    <link rel="stylesheet" href="/assets/style.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   </head>
-
-  <script>
-    // Select all links with hashes
-    $('a[href*="#"]')
-    // Remove links that don't actually link to anything
-    .not('[href="#"]')
-    .not('[href="#0"]')
-    .click(function(event) {
-      // On-page links
-      if (
-        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-        && 
-        location.hostname == this.hostname
-      ) {
-        // Figure out element to scroll to
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-        // Does a scroll target exist?
-        if (target.length) {
-          // Only prevent default if animation is actually gonna happen
-          event.preventDefault();
-          $('html, body').animate({
-            scrollTop: target.offset().top
-          }, 1000, function() {
-            // Callback after animation
-            // Must change focus!
-            var $target = $(target);
-            $target.focus();
-            if ($target.is(":focus")) { // Checking if the target was focused
-              return false;
-            } else {
-              $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-              $target.focus(); // Set focus again
-            };
-          });
-        }
-      }
-    });
-  </script>
 
   <body>
 
@@ -67,9 +28,15 @@
           <li><a href="#awards">Award</a></li>
         </ul>
       </nav>
+      <div id="dark-mode-toggle" class="dark-mode-toggle" title="Swith On/Off Dark Mode">
+        <svg viewBox="0 0 512 512" width="20" title="moon">
+          <path d="M283.211 512c78.962 0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954 0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156 0 0 0 283.211 0c-141.309 0-256 114.511-256 256 0 141.309 114.511 256 256 256z" />
+        </svg>
+      </div>
     </header>
 
     <main>
+
       <section id="home" class="home">
         <div class="info">
           <h2>Hello, my name is...</h2>
@@ -200,26 +167,20 @@
 
       <section id="awards" class="awards">
         <h1>My Award</h1>
-        <div class="detailAwards">
-          <div class="award-1">
+        <div class="award">
+          <div class="section-award">
             <h3>Lorem Ipsum</h3>
-            <img src="https://picsum.photos/id/180/300" alt="">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            <div class="detailAward">
+              <img src="https://picsum.photos/id/180/200" alt=""/>
+              <div>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
+            </div>
           </div>
-          <div class="award-2">
+          <div class="section-award">
             <h3>Lorem Ipsum</h3>
-            <img src="https://picsum.photos/id/180/300" alt="">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-          </div>
-          <div class="award-3">
-            <h3>Lorem Ipsum</h3>
-            <img src="https://picsum.photos/id/180/300" alt="">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-          </div>
-          <div class="award-4">
-            <h3>Lorem Ipsum</h3>
-            <img src="https://picsum.photos/id/180/300" alt="">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            <div class="detailAward">
+              <img src="https://picsum.photos/id/180/200" alt="">
+              <div>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
+            </div>
           </div>
         </div>
       </section>
@@ -229,18 +190,18 @@
       <div class="container">
         <div class="row">
           <div class="footer-col">
-            <h4>
+            <p>
               <a href="#home">
                 <img src="https://web-porto-lime.vercel.app/static/media/maf.66e4949db67b58ebe0a6.png" alt="Logo Website" />
               </a>
-            </h4>
+            </p>
           </div>
           <div class="footer-col">
-            <h4>Copyright © 2023 Mohamad Agung Faisal. All Rights Reserved</h4> 
+            <p>Copyright © 2023 Mohamad Agung Faisal. All Rights Reserved</p> 
           </div>
           <div class="footer-col">
             <div>
-              <h4>Follow Us</h4>
+              <p>Follow Us</p>
             </div>
             <div class="social-media">
               <a href="https://github.com/agungf97" target="_blank"><i class="fab fa-github"></i></a>
@@ -252,5 +213,7 @@
       </div>
     </footer>
     
+    <script src="/assets/script.js"></script>
+
   </body>
 </html>
